@@ -31,8 +31,8 @@ function showTemperature(response) {
   console.log(response.data.main.temp);
   let temperature = Math.round(response.data.main.temp);
 
-  let h3 = document.querySelector("h3");
-  h3.innerHTML = `${temperature}°C`;
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${temperature}`;
 }
 
 function searchCity(city) {
@@ -45,6 +45,7 @@ function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
   searchCity(city);
+
 }
 
 function handlePosition(position) {

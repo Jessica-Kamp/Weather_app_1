@@ -1,7 +1,8 @@
-background: linear-gradient(#fdb74c, #e6abab);
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 .container {
-  background-image: url("https://images.pexels.com/photos/3705945/pexels-photo-3705945.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: content;
@@ -12,22 +13,21 @@ background: linear-gradient(#fdb74c, #e6abab);
 }
 
 .date {
-  color: rgb(45, 66, 112);
+  color: rgb(9, 51, 139);
 }
 
 .weather-temperature {
-  color: rgb(35, 25, 90);
+  color: rgb(76, 53, 207);
 }
 
 .search-form {
-  text-align: center;
+  text-align: left;
   max-width: 725px;
 }
 
-h1,
-h2 {
-  font-family: "Montserrat", sans-serif;
-}
-h6 {
-  font-size: 10px;
+.weather-app {
+  padding: 20px;
+  border: 1px solid #2d60a3;
+  border-radius: 5px;
+  background-image: url("https://images.pexels.com/photos/3705945/pexels-photo-3705945.jpeg");
 }
