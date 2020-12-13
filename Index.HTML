@@ -14,86 +14,58 @@
 <body>
     <div class="container">
         <div class="weather-app">
-            <form id="search-form">
-                <div class="search-form" id="search-form">
-                    <label for="exampleFormControlInput1"></label>
-                    <input type="city" class="form-control" id="city-input" placeholder="Enter name of city">
-                </div>
+            <div class="col-4">
+                <form id="search-form">
+                    <div class="search-form" id="search-form">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="city" class="form-control" id="city-input" placeholder="Enter name of city">
+                    </div>
+            </div>
             </form>
+
+            </br>
+            </br>
+            </br>
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="city-card">
-                        <div class="card-body">
-                            <h4 id="city">Hong Kong</h4>
-                            <h3 id="temperature">12°C</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="city-card">
-                        <div class="card-body">
-                            <h5 id="date"></h5>
-                            <h5 class="condition">Slightly cloudy</h5>
-                            <img src="https://icon-library.net/images/partly-cloudy-icon/partly-cloudy-icon-0.jpg"
-                                alt="slightly cloudy icon">
-                            <h5 class="precipitation">Precipitation 74%</h5>
-                        </div>
-                    </div>
-                </div>
-                <br />
-                <br />
-                <p>Weather outlook</p>
-                <br />
-                <div class="row">
-                    <div class="col-sm-2.5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="day">Mon</h6>
-                                <h6 class="temperature">28°C</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2.5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="day">Tue</h6>
-                                <h6 class="temperature">28°C</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2.5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="day">Wed</h6>
-                                <h6 class="temperature">26°C</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2.5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="day">Thur</h6>
-                                <h6 class="temperature">25°C</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2.5">
-                        <div class="card">
-                            <div class="card-body">
-                                <h6 class="day">Fri</h6>
-                                <h6 class="temperature">25°C</h6>
-                            </div>
+                <div class="col-6">
+                    <div class="weather-temperature">
+                        <div class="float-left">
+                            <strong id="temperature">20</strong><span class="units"><a href="#" id="celsius-link"
+                                    class="active">°C</a> |
+                                <a href="#" id="fahrenheit-link">°F</a></span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-4">
+                <div class="city-card">
+                    <h5 id="date"></h5>
+                </div>
+            </div>
         </div>
-       <h6> <a
-        href="https://github.com/Jessica-Kamp/Weather_app_1"
-        target="blank"
-        class="open-source code"
-        >Open-source code</a> by Jessica Kamphuis</h6>
-        <script src="src/index.js"></script>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="center">
+                        <h6 class="day">Tomorrow</h6>
+                        <h6 class="temperature">28°C</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <small> <a href="https://github.com/Jessica-Kamp/Weather_app_1" target="blank" class="open-source code">Open-source
+            code</a> by Jessica Kamphuis</small>
+    <script src="src/index.js"></script>
+    </div>
 </body>
 
 </html>
