@@ -12,51 +12,54 @@
 </head>
 
 <body>
-    <div class="container">
+    
+<div class="container">
+    <div class="weather-app-wrapper">
         <div class="weather-app">
-            <div class="col-4">
-                <form id="search-form">
-                    <div class="search-form" id="search-form">
-                        <label for="exampleFormControlInput1"></label>
-                        <input type="city" class="form-control" id="city-input" placeholder="Enter name of city">
+            <form id="search-form" class="mb-3">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="search" placeholder="Enter name of city" class="form-control" id="city-input"
+                            autocomplete="off" />
                     </div>
-            </div>
-            </form>
-        </br>
-    </br>
-</br>
-            <div class="row">
-                <div class="col-4">
-                    <div class="weather-temperature">
-                        <div class="city-forecast">
-                            <h2 id="city">Hong Kong</h2>
-                        </br>
-                    </br>
-                            <h1><strong id="temperature">28</strong><span class="units"><a href="#" id="celsius-link"
-                                    class="active">°C</a> |
-                                <a href="#" id="fahrenheit-link">°F</a></span></h1>
-                            </br>
-                        </br>
-                    </br>
-                    <h5 id="date"></h5>
-                        </div>
-                    </div>
-                
-            </div>
-        </div>
-</br>
-</br>
-</br>
-</br>
-<h6> <a href="https://github.com/Jessica-Kamp/Weather_app_1" target="blank" class="open-source code">Open-source
-        code</a> by Jessica Kamphuis</h6>
-<script src="src/index.js"></script>
-
+                    <div class="col-3">
+                        <input type="submit" value="Search" class="btn btn-primary w-100" />
                     </div>
                 </div>
+            </form>
+            <div class="overview">
+                <h1 id="city">Hong Kong</h1>
+                <ul>
+                    <li><span id="date"></span></li>
+                    <li id="condition">Rainy</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="weather-temperature">
+                        <img src="" alt="Clear" id="icon" class="float-left" />
+                        <div class="float-left">
+                            <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
+                                    class="active">°C</a> |
+                                <a href="#" id="fahrenheit-link">°F</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> km/h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row weather-forecast" id="forecast"></div>
         </div>
-    </div>
-    </div>
+        <small>
+    <a href="https://github.com/Jessica-Kamp/Weather_app_1" target="blank" class="open-source code">Open-source
+        code</a> by Jessica Kamphuis</small>
+</div>
+</div>
+<script src="src/index.js"></script>
 </body>
 
 </html>
