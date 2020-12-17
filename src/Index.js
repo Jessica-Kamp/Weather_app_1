@@ -19,18 +19,27 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 dateElement.innerHTML = `${days[dayIndex]}, ${hours}:${minutes}`;
 
-
-
-
-
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#condition");
-  let humidityElement = document.querySelector("#humidity");
-  let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   
+
+function showTemperature(response) {
+  console.log(response);
+  console.log(response.data.main.temp);
+  let temperature = Math.round(response.data.main.temp);
+
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = `${temperature}°C`;
+}
+
+function searchCity(city) {
+  let apiKey = "52ab87c28c3fa62d2df55c9dfce87bc7";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
 
   celsiusTemperature = response.data.main.temp;
 
