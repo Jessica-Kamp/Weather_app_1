@@ -3,7 +3,7 @@ body {
 }
 
 h1 h2 {
-  color: #a07f41;
+  color: #161108;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -20,7 +20,7 @@ h5 {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #a07f41;
+  color: #161108;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -31,40 +31,26 @@ Condition:first-letter {
 }
 
 .container {
-  background-image: url("..src/images/happy.png");
+  background-image: url("..src/images/art.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  border: solid;
-  outline: 0.5rem solid #a07f41;
-  padding: 1rem;
-  margin: 2rem;
+  background-size: contain;
+  padding: 10px;
+  max-width: 450px;
+  margin: 30px auto;
 }
 
 .weather-app-wrapper {
   text-align: center;
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 700px;
-  border: 1px solid #c41c1c;
-  border-radius: 20px;
 }
 
 .weather-app {
-  padding: 20px;
-  border: 1px solid #a07f41;
+  border: 1px solid #745e54;
   border-radius: 5px;
 }
 
 .overview {
   margin-bottom: 20px;
-}
-
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
 }
 
 .weather-temperature strong {
