@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  }
+}
 
 h1 h2 {
   color: #a07f41;
@@ -31,7 +31,9 @@ Condition:first-letter {
 }
 
 .container {
-  background-image: https://images.pexels.com/photos/3705645/pexels-photo-3705645.jpeg;
+  background-image: url("..src/images/happy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: solid;
   outline: 0.5rem solid #a07f41;
   padding: 1rem;
