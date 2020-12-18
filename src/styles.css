@@ -1,9 +1,8 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-image: url("https://images.pexels.com/photos/3705945/pexels-photo-3705945.jpeg");
-}
+  }
 
-h1 {
+h1 h2 {
   color: #a07f41;
   font-size: 24px;
   font-weight: 100;
@@ -11,13 +10,13 @@ h1 {
   margin-bottom: 0;
 }
 
-ul {
+h5 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-li {
+h5 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -27,8 +26,16 @@ li {
   line-height: 19px;
 }
 
-li:first-letter {
+Condition:first-letter {
   text-transform: capitalize;
+}
+
+.container {
+  background-image: https://images.pexels.com/photos/3705645/pexels-photo-3705645.jpeg;
+  border: solid;
+  outline: 0.5rem solid #a07f41;
+  padding: 1rem;
+  margin: 2rem;
 }
 
 .weather-app-wrapper {
@@ -79,7 +86,6 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: underline;
 }
-
 .weather-forecast {
   margin-top: 10px;
 }
