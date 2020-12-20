@@ -11,12 +11,6 @@ h1 h2 {
 }
 
 h5 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h5 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -31,12 +25,15 @@ Condition:first-letter {
 }
 
 .container {
-  background-image: url("..src/images/art.jpg");
+  background-image: url("../src/images/happy.png");
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 10px;
-  max-width: 450px;
-  margin: 30px auto;
+  padding: 10;
+  max-width: 100px;
+  margin: 0;
+  position: relative;
+  box-sizing: content-box;
 }
 
 .weather-app-wrapper {
