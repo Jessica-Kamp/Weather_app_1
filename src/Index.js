@@ -1,10 +1,3 @@
-import React from "react";
-import "./Weather.css";
-
-export default function Weather() {
-
-
-
 function formatDate(date) {
   return `${days[dayIndex]}, ${hours}:${minutes}`;
 }
@@ -80,6 +73,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("Hong Kong");
-
-}
-
